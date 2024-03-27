@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-family: Arial, sans-serif;
+            }
+            .top-right-links {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .top-right-links a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: #1a0dab;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            input[type="text"] {
+                margin-bottom: 10px;
+                width: 500px;
+                height: 30px;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                padding: 0 20px;
+                font-size: 16px;
+            }
+            .button-container {
+                display: flex;
+            }
+            input[type="submit"] {
+                margin: 5px;
+                padding: 10px 20px;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                background-color: #f8f9fa;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top-right-links">
+            <a href="image_search.html">Images</a>
+            <a href="advanced_search.html">Advanced Search</a>
+        </div>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <input type="submit" value="Google Search">
+            <input type="submit" value="I'm Feeling Lucky" formaction="https://www.google.com/search?btnI=I">
+        </form>
+    </body>
+</html>
